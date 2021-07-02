@@ -16,6 +16,10 @@ def send_product():
 def send_shop():
     return send_from_directory('public', 'components/shop/shop.html')
 
+@app.route('/order')
+def send_order():
+    return send_from_directory('public', 'components/order/order.html')
+
 @app.route('/notfound')
 def send_404():
     return send_from_directory('public', 'components/notfound/notfound.html')

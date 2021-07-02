@@ -3,14 +3,23 @@
         <link rel="stylesheet" href="/static/lib/bootstrap.css">
         <link rel="stylesheet" href="/static/lib/fa.css">
         <link rel="stylesheet" href="/static/components/product/product.css">
+        <link rel="stylesheet" href="/static/common/style.css">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="/static/common/util.js"></script>
         <script src="/static/lib/axios.js"></script>
         <script src="/static/lib/jquery.js"></script>
         <script src="/static/lib/bootstrap.js"></script>
         <script src="/static/dat/data.js"></script>
     </head>
     <body>
+      
+        <div class="cart-icon text-center border border-dark bg-light" onclick="flip_cart_content()">
+          <i class="text-dark fas fa-shopping-cart fa-2x cursor-pointer"></i>
+        </div>
+        <div class="cart-content border bg-light" id="cart-content" style="display: none;">
+        </div>
         <div class="card col-10 offset-1 my-5">
-          <h3 id="name" class="card-header">...</h3>
+          <h4 id="name" class="card-header">...</h4>
           <div class="card-body">
             <h5 class="card-title" id="price">...</h5>
             <h6 class="card-subtitle text-muted" id="available">...</h6>
